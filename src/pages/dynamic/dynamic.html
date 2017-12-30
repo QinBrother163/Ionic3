@@ -1,0 +1,45 @@
+<!--
+  Generated template for the DynamicPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+    <ion-toolbar>
+        <ion-segment mode="md" [(ngModel)]="segmentModel3">
+            <ion-icon name="contacts" class="add"></ion-icon>
+            <ion-segment-button value="segmentOne3">
+                热门
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentTwo3">
+                关注
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentThree3">
+                附近
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-icon name="reverse-camera" class="camear"></ion-icon>
+        </ion-segment>
+    </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div (swipe)="swipeEv($event)" class="big-div">
+        <div [ngSwitch]="segmentModel3" style="width: 100%;height: 100%">
+            <ion-list *ngSwitchCase="'segmentOne3'" style="width: 100%;height: 100%">
+                <page-three-hot></page-three-hot>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentTwo3'" style="width: 100%;height: 100%">
+                <page-three-follow></page-three-follow>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentThree3'" style="width: 100%;height: 100%">
+                <page-three-options></page-three-options>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

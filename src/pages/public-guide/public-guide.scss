@@ -1,0 +1,57 @@
+page-public-guide {
+  .nav_btn_login{
+    z-index: 100;
+    padding: 0 2%;
+    float: right;
+    color: #fff;
+    border: 1px solid #8c8c8c;
+    border-radius: 15px;
+    margin: 5% 5%;
+  }
+  .content_btn_join{
+    padding: 0 25%;
+    z-index: 99;
+    font-size: 1.3rem;
+  }
+  .content_wrap{
+    height: 100%;
+  }
+  .content_wrap_div1{
+    height: 75%;
+  }
+  .content_wrap_div2{
+    height: 25%;
+    text-align: center;
+    line-height: 10rem;
+    width:100%;
+    padding-top: 5%;
+  }
+  video#bgvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 99;
+    //background: url('../img/bj.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -47px;
+    margin-top: -11px;
+    width: 94px;
+    height: 22px;
+    display: block;
+    z-index: 100;
+  }
+}

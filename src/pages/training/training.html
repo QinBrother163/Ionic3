@@ -1,0 +1,51 @@
+<!--
+  Generated template for the TrainingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+    <ion-toolbar>
+        <ion-segment mode="md" [(ngModel)]="segmentModel1">
+            <ion-segment-button value="segmentOne">
+                训练
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentTwo">
+                跑步
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentThree">
+                行走
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentFour">
+                骑行
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-icon name="search" style="float: right; margin-right: 5%" (click)="goSearch()"></ion-icon>
+        </ion-segment>
+    </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div (swipe)="swipeEv($event)" class="big-div">
+        <div [ngSwitch]="segmentModel1" style="width: 100%;height: 100%">
+            <ion-list *ngSwitchCase="'segmentOne'" style="width: 100%;height: 100%">
+                <page-one-train></page-one-train>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentTwo'" style="width: 100%;height: 100%">
+                <page-one-run></page-one-run>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentThree'" style="width: 100%;height: 100%">
+                <page-one-walk></page-one-walk>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentFour'" style="width: 100%;height: 100%">
+                <page-one-cycling></page-one-cycling>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

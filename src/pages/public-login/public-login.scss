@@ -1,0 +1,58 @@
+page-public-login {
+  .scroll-content{
+    background-color: #2d2d2d;
+  }
+  .login_wrap{
+    text-align: center;
+  }
+  .login_txt{
+    font-size: 25px;
+    color: #fff;
+  }
+  .login_phone{
+    margin: 0 auto;
+    padding: 0 28%;
+  }
+  .rung{
+    width: 5%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #4d4d4d;
+  }
+  .login_other{
+    color: #4d4d4d;
+  }
+  .mar_txt{
+    margin: 15% 0 0 0;
+  }
+  .mar_phone{
+    margin: 20% 0;
+  }
+  .mar_other{
+    margin: 10% 0 5% 0;
+  }
+  .mar_terms{
+    margin-top: 25%;
+  }
+  .login_ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0 0 0 0 !important;
+  }
+  .login_ul li{
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    border: 1px solid #6d6d6d;
+    margin: 0 1%;
+    line-height: 60px;
+    border-radius: 100%;
+  }
+  .login_terms,.login_terms a{
+    color: #fff;
+    font-size: 12px;
+  }
+}

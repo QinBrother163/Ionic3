@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <div id="search-div">
+            <ion-icon name="search"><span>ToodoKeep最牛逼</span></ion-icon>
+        </div>
+        <ion-segment mode="md" [(ngModel)]="segmentModel2">
+            <ion-segment-button value="segmentOne2">
+                精选
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentTwo2">
+                训练
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentThree2">
+                饮食
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+            <ion-segment-button value="segmentFour2">
+                商场
+                <div class="bolder-sm"></div>
+            </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div (swipe)="swipeEv($event)" class="big-div">
+        <div [ngSwitch]="segmentModel2" style="width: 100%;height: 100%">
+            <ion-list *ngSwitchCase="'segmentOne2'" style="width: 100%;height: 100%">
+                <page-two-selected></page-two-selected>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentTwo2'" style="width: 100%;height: 100%">
+                <page-two-train></page-two-train>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentThree2'" style="width: 100%;height: 100%">
+                <page-two-diet></page-two-diet>
+            </ion-list>
+            <ion-list *ngSwitchCase="'segmentFour2'" style="width: 100%;height: 100%">
+                <page-two-shop></page-two-shop>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>

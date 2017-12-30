@@ -1,0 +1,45 @@
+<!--
+  Generated template for the PublicGuidePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content style="width: 100%;height: 100%">
+    <button (click)="GoLogin()" class="nav_btn_login" ion-button small clear>登 录</button>
+    <div id="assets_wrap">
+        <img id="oimg" class="img" src="../../assets/imgs/winners.png">
+        <video autoplay id="bgvid">
+            <source id="mp4_src" src="../../assets/mp4/m.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content_wrap">
+        <div id="content_wrap_div1" class="content_wrap_div1">
+            <ion-slides pager (ionSlideDidChange)="slideChanged()">
+
+                <ion-slide>
+                    <button (click)="GoHome()" id="btn1" class="btn" ion-button color="light" round>GoHome</button>
+                </ion-slide>
+
+                <ion-slide>
+                    <button id="btn2" class="btn" ion-button color="light" round>22</button>
+                </ion-slide>
+
+                <ion-slide>
+                    <button id="btn3" class="btn" ion-button color="light" round>33</button>
+                </ion-slide>
+
+                <ion-slide>
+                    <button id="btn4" class="btn" ion-button color="light" round>44</button>
+                </ion-slide>
+
+            </ion-slides>
+        </div>
+        <div class="content_wrap_div2">
+            <button class="content_btn_join" (click)="GoRegistered()" ion-button color="secondary" round>现在就加入</button>
+        </div>
+    </div>
+
+</ion-content>
